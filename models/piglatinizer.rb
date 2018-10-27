@@ -1,6 +1,9 @@
+require 'pry'
+
 class PigLatinizer
   def initialize(user_phrase)
     @words = user_input.split(" ")
+    binding.pry
   end
 
   def piglatinize
@@ -11,3 +14,4 @@ class PigLatinizer
     !!word.match(/\A[aeiouAEIOU]/)
   end
 end
+
