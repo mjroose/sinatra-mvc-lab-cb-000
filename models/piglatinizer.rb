@@ -5,8 +5,8 @@ class PigLatinizer
     @words = words
   end
 
-  def piglatinize(words)
-    words..split(" ").collect do |word|
+  def piglatinize
+    @words.split(" ").collect do |word|
       if starts_with_vowel?(word)
         pl_word = piglatinize_vowel_word(word)
       else
