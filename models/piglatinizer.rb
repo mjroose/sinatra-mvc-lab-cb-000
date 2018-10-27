@@ -26,4 +26,4 @@ class PigLatinizer
   end
 end
 
-PigLatinizer.new("Once upon a time, the quick brown fox jumped over the lazy dog")
+PigLatinizer.new("Once upon a time, the quick brown fox jumped over the lazy dog").piglatinize
