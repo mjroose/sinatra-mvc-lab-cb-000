@@ -3,15 +3,22 @@ require 'pry'
 class PigLatinizer
   def initialize(user_phrase)
     @words = user_phrase.split(" ")
-    binding.pry
+
   end
 
   def piglatinize
-    @text
+    pl_words = @words.collect do |word|
+      
+    end
+    binding.pry
   end
 
   def starts_with_vowel?(word)
     !!word.match(/\A[aeiouAEIOU]/)
+  end
+
+  def piglatinize_vowel_word(word)
+    word + "way"
   end
 end
 
