@@ -2,7 +2,7 @@ require 'pry'
 
 class PigLatinizer
   def initialize(user_phrase = "")
-    @words = words.split(" ")
+    @words = user_phrase.split(" ")
   end
 
   def piglatinize(user_phrase = nil)
