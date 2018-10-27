@@ -1,13 +1,11 @@
 require 'pry'
 
 class PigLatinizer
-  def initialize(user_phrase)
-    @words = user_phrase.split(" ")
-
+  def initialize
   end
 
-  def piglatinize
-    @words.collect do |word|
+  def piglatinize(words)
+    words..split(" ").collect do |word|
       if starts_with_vowel?(word)
         pl_word = piglatinize_vowel_word(word)
       else
