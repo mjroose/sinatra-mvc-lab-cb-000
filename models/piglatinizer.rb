@@ -28,8 +28,15 @@ class PigLatinizer
   end
 
   def piglatinize_consonant_word(word)
+    while starts_with_vowel?(word) == false
+      word = shift_consonant_to_end(word)
+    end
+    word + "ay"
+  end
+
+  def shift_consonant_to_end(word)
     first_letter = word.slice!(0)
-    word + first_letter + "ay"
+    word + first_letter
   end
 end
 
