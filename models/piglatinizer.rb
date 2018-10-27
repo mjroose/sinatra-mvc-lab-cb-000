@@ -1,7 +1,8 @@
 require 'pry'
 
 class PigLatinizer
-  def initialize
+  def initialize(words = [])
+    @words = words
   end
 
   def piglatinize(words)
