@@ -9,8 +9,8 @@ class PigLatinizer
     if user_phrase
       @words = user_phrase.split(" ")
     end
-    
-    @words.split(" ").collect do |word|
+
+    @words.collect do |word|
       if starts_with_vowel?(word)
         pl_word = piglatinize_vowel_word(word)
       else
