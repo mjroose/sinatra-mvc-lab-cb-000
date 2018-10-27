@@ -24,6 +24,10 @@ class PigLatinizer
   def piglatinize_vowel_word(word)
     word + "way"
   end
+
+  def piglatinize_consonant_word(word)
+
+  end
 end
 
 PigLatinizer.new("Once upon a time the quick brown fox jumped over the lazy dog").piglatinize
