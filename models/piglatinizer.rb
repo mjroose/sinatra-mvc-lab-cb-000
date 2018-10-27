@@ -13,8 +13,7 @@ class PigLatinizer
       else
         pl_word = piglatinize_consonant_word(word)
       end
-    end
-    binding.pry
+    end.join(" ")
   end
 
   def starts_with_vowel?(word)
