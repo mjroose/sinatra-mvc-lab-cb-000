@@ -11,7 +11,7 @@ class PigLatinizer
       if starts_with_vowel?(word)
         pl_word = piglatinize_vowel_word(word)
       else
-        pl_word = word
+        pl_word = piglatinize_consonant_word(word)
       end
     end
     binding.pry
