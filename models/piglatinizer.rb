@@ -26,7 +26,8 @@ class PigLatinizer
   end
 
   def piglatinize_consonant_word(word)
-
+    first_letter = word.slice!(0)
+    word + first_letter + "ay"
   end
 end
 
