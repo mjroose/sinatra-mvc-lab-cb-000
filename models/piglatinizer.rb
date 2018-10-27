@@ -8,7 +8,11 @@ class PigLatinizer
 
   def piglatinize
     pl_words = @words.collect do |word|
-      
+      if starts_with_vowel?(word)
+        pl_word = piglatinize_vowel_word
+      else
+        pl_word = word
+      end
     end
     binding.pry
   end
